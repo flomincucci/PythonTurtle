@@ -1,12 +1,11 @@
 **Esta version fue traducida al español**
 
 Homepage: [http://pythonturtle.org](http://pythonturtle.org)
-A Windows installer is available from there.
 
-PythonTurtle strives to provide the lowest-threshold way to learn Python. Students command an interactive Python shell (similar to the IDLE development environment) and use Python functions to move a turtle displayed on the screen. An illustrated help screen introduces the student to the basics of Python programming while demonstrating how to move the turtle.
+PythonTurtle se esfuerza en proveer una manera accesible de aprender Python. Los estudiantes acceden a una línea de comandos de Python interactiva (similar el ambiente de desarrollo IDLE) y usan functionde Python para mover la tortuga mostrada en pantalla. Una pantalla de ayuda ilustrada introduce al usuario a las bases de la programación en Python mientras muestra como mover la tortuga.
 
 ![Screen shot](http://pythonturtle.org/screenshot.gif)
 
-Tested with Python 2.6 and wxPython 2.8.10.1. Currently tested only on Windows and Ubuntu.
+Probado con Python 2.6 y wxPython 2.8.10.1. Actualmente solo probado en Windows y Ubuntu.
 
-This project is licensed under the MIT license.
+Este proyecto esta licenciado bajo la licencia MIT.

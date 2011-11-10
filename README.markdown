@@ -1,3 +1,5 @@
+**Esta version fue traducida al español**
+
 Homepage: [http://pythonturtle.org](http://pythonturtle.org)
 A Windows installer is available from there.
 

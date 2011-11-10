@@ -220,12 +220,12 @@ class TurtleProcess(multiprocessing.Process):
             self.turtle = Turtle()
             clear()
 
-        locals_for_console={"go": go, "turn": turn, "color": color,
-                            "width": width, "visible": visible,
-                            "invisible": invisible, "pen_down": pen_down,
-                            "pen_up": pen_up, "is_visible": is_visible,
-                            "is_pen_down": is_pen_down, "sin": sin, "cos": cos,
-                            "turtle": self.turtle, "clear": clear,
+        locals_for_console={"avanzar": go, "girar": turn, "color": color,
+                            "ancho": width, "visible": visible,
+                            "invisible": invisible, "lapiz_abajo": pen_down,
+                            "lapiz_arriba": pen_up, "es_visible": is_visible,
+                            "esta_lapiz_abajo": is_pen_down, "seno": sin, "coseno": cos,
+                            "tortuga": self.turtle, "limpiar": clear,
                             "reset": reset}
 
 

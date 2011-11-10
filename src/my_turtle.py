@@ -25,9 +25,7 @@ to_my_pos = lambda pos: -pos+origin
 
 class Turtle(object):
     """
-    A Turtle object defines a turtle by its attributes, such as
-    position, orientation, color, etc. See source of __init__ for
-    a complete list.
+		Un objeto Turtle (Tortuga) define una tortuga por sus atributos, tales como posicion, orientacion, color, etc. Ver el fuente de __init__ para obtener una lista completa.
     """
     def __init__(self):
         self.pos = Vector((0,0))

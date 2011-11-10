@@ -1,15 +1,9 @@
 """
-An educational environment for learning Python, suitable for beginners
-and children. Inspired by LOGO.
+Un ambiente educativo para aprender Python, adecuado para principiantes y ninios. Inspirado por LOGO.
 
-Call `run()` to run it.
+Llama `run()` para ejecutarlo.
 
-PythonTurtle aims to be the most low-threshold way for learning or
-teaching Python. The user is given command of an interactive Python
-shell, similar to IDLE, and is able to use Python functions to move a
-turtle that is displayed on the screen. An illustrated help screen
-demonstrates how to move the turtle and introduces the student to the
-basics of Python programming.
+PythonTurtle planea ser la forma mas accesible de enseniar o aprender Python. Se le provee al usuario una linea de comando interactiva de Python, similar a IDLE, y es capaz de usar funciones de Python para mover la tortuga que se muestra en pantalla. Una pantalla de ayuda ilustrada muestra como mover la tortuga e introduce al alumno a las bases de la programacion en Python.
 """
 
 from pythonturtle import run

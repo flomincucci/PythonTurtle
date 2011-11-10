@@ -26,7 +26,7 @@ except ImportError:
 
 class ApplicationWindow(wx.Frame):
     """
-    The main window of PythonTurtle.
+		La ventana principal de PythonTurtle.
     """
     def __init__(self,*args,**keywords):
         wx.Frame.__init__(self,*args,**keywords)
@@ -97,37 +97,37 @@ class ApplicationWindow(wx.Frame):
 
     def init_menu_bar(self):
         """
-        Initialize the menu bar.
+				Inicializa la barra de menu
         """
 
         self.menu_bar = wx.MenuBar()
 
         self.file_menu = wx.Menu()
-        self.exit_menu_item = wx.MenuItem(self.file_menu, -1, 'E&xit')
+        self.exit_menu_item = wx.MenuItem(self.file_menu, -1, '&Salir')
         self.file_menu.AppendItem(self.exit_menu_item)
         self.Bind(wx.EVT_MENU, self.on_exit, source=self.exit_menu_item)
 
 
         self.help_menu = wx.Menu()
 
-        self.help_menu_item = wx.MenuItem(self.help_menu, -1, '&Help\tF1', kind=wx.ITEM_CHECK)
+        self.help_menu_item = wx.MenuItem(self.help_menu, -1, 'A&yuda\tF1', kind=wx.ITEM_CHECK)
         self.help_menu.AppendItem(self.help_menu_item)
         self.Bind(wx.EVT_MENU, self.toggle_help, source=self.help_menu_item)
 
         self.help_menu.AppendSeparator()
 
-        self.about_menu_item = wx.MenuItem(self.help_menu, -1, "&About...")
+        self.about_menu_item = wx.MenuItem(self.help_menu, -1, "A&cerca de...")
         self.help_menu.AppendItem(self.about_menu_item)
         self.Bind(wx.EVT_MENU, self.on_about, source=self.about_menu_item)
 
-        self.menu_bar.Append(self.file_menu, '&File')
-        self.menu_bar.Append(self.help_menu, '&Help')
+        self.menu_bar.Append(self.file_menu, '&Archivo')
+        self.menu_bar.Append(self.help_menu, 'A&yuda')
 
         self.SetMenuBar(self.menu_bar)
 
     def init_help_screen(self):
         """
-        Initializes the help screen.
+				Inicializa la pantalla de ayuda
         """
         self.help_screen = wx.Panel(parent=self, size=(-1,-1))
 
@@ -144,10 +144,10 @@ class ApplicationWindow(wx.Frame):
         self.help_notebook.Bind(wx.EVT_SET_FOCUS, give_focus_to_selected_page)
         self.help_notebook.Bind(wx.EVT_CHILD_FOCUS, give_focus_to_selected_page)
 
-        self.help_images_list=[["Level 1", from_resource_folder("help1.png")],
-                               ["Level 2", from_resource_folder("help2.png")],
-                               ["Level 3", from_resource_folder("help3.png")],
-                               ["Level 4", from_resource_folder("help4.png")]]
+        self.help_images_list=[["Nivel 1", from_resource_folder("help1.png")],
+                               ["Nivel 2", from_resource_folder("help2.png")],
+                               ["Nivel 3", from_resource_folder("help3.png")],
+                               ["Nivel 4", from_resource_folder("help4.png")]]
 
 
         self.help_pages=[HelpPage(parent=self.help_notebook, bitmap=wx.Bitmap(bitmap_file), caption=caption) \
@@ -203,14 +203,10 @@ class ApplicationWindow(wx.Frame):
             wx.AboutDialogInfo()
 
         description="""\
-An educational environment for learning Python, suitable for beginners and children.
-Inspired by LOGO.
+Un ambiente educativo para aprender Python, adecuado para principiantes y ninios. Inpirado por LOGO.
 
-Runs on Python 2.6, using wxPython, Psyco and py2exe. Thanks go to the developers
-responsible for these projects, as well as to the helpful folks at the user groups
-of these projects, and at StackOverflow.com, who have helped solved many problems
-that came up in the making of this program."""
-
+Corre sobre Python 2.6, usando wxPython, Psyco y py2exe. Los agradecimientos van para los desarrolladoers responsables de estos proyectos, asi como para las personas utiles en los grupos de usuarios de esos proyectos y en StackOverflow.com, quienes ayudaron a resolver muchos de los problemas que surgieron haciendo este programa.
+."""
         info.SetCopyright("MIT License, (C) 2009 Ram Rachum (\"cool-RR\")")
         info.SetDescription(description)
         info.SetName("PythonTurtle")
